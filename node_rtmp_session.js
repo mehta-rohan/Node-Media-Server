@@ -1083,6 +1083,7 @@ class NodeRtmpSession {
   }
 
   onStartPlay() {
+    console.log('Playing...');
     let publisherId = context.publishers.get(this.playStreamPath);
     let publisher = context.sessions.get(publisherId);
     let players = publisher.players;
